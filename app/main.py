@@ -11,7 +11,7 @@ app = FastAPI(
         "API REST con Machine Learning para la gestión de trámites municipales "
         "y selección automatizada de currículos en la Municipalidad Provincial de Yau."
     ),
-)
+)  
 
 app.add_middleware(
     CORSMiddleware,
