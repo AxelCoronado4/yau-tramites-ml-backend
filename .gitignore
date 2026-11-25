@@ -1,0 +1,36 @@
+# Entornos virtuales de Python
+.venv/
+venv/
+env/
+
+# Caché y compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Variables de entorno reales (NUNCA subir secretos)
+.env
+.env.local
+.env.*.local
+
+# Archivos subidos en ejecución (CVs y documentos de prueba)
+storage/uploads/*
+!storage/uploads/.gitkeep
+
+# Artefactos pesados de ML generados localmente (se regeneran con train.py)
+app/ml/artifacts/*.joblib
+!app/ml/artifacts/.gitkeep
+
+# Logs y bases de datos locales temporales
+*.log
+*.sqlite3
+*.db
+
+# Editores y Sistema Operativo
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
